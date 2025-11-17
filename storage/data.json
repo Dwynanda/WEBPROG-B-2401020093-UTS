@@ -1,0 +1,28 @@
+[
+    {
+        "nama": "Joni",
+        "isi": "Kapan lawar plek Pan Dex O buka cabang di London?",
+        "topik": "kuliner",
+        "created_at": "03 Nov 2025 15:38",
+        "replies": [
+            {
+                "nama": "Komang Konden Kelih",
+                "balasan": "Onden ade info nok wi",
+                "created_at": "03 Nov 2025 15:39"
+            }
+        ]
+    },
+    {
+        "nama": "darren",
+        "isi": "nasi goreng atau mie goreng",
+        "topik": "teknologi",
+        "created_at": "10 Nov 2025 08:16",
+        "replies": [
+            {
+                "nama": "Dwira",
+                "balasan": "nasi goreng lah",
+                "created_at": "10 Nov 2025 08:16"
+            }
+        ]
+    }
+]

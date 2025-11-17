@@ -1,0 +1,256 @@
+/* ====== GLOBAL ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ====== NAVBAR ====== */
+nav {
+    background: #ffffff;
+    padding: 35px 0 40px;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-center h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+/* Warna hitam untuk "Mini" */
+.nav-center h1 .mini {
+    color: #000;
+}
+
+/* Gradasi biru untuk "Forum" */
+.nav-center h1 .forum {
+    background: linear-gradient(90deg, #007bff, #00b4d8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Slogan */
+.nav-center .slogan {
+    font-size: 15px;
+    color: #777;
+    font-weight: 400;
+}
+
+/* ====== CONTAINER ====== */
+.container {
+    max-width: 750px;
+    margin: 50px auto;
+    background: #fff;
+    border-radius: 20px;
+    padding: 35px 40px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+/* ====== FORM POST ====== */
+.post-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid #dbe3ed;
+    border-radius: 12px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease-in-out;
+}
+
+.input:focus {
+    border-color: #007bff;
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+.btn {
+    background: linear-gradient(90deg, #007bff, #00a6ff);
+    color: white;
+    padding: 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-weight: 500;
+}
+
+.btn:hover {
+    background: linear-gradient(90deg, #006fe6, #0091ff);
+    transform: translateY(-2px);
+}
+
+/* ====== POST LIST ====== */
+.post-list {
+    margin-top: 40px;
+}
+
+.post-card {
+    border-radius: 16px;
+    background: #fbfdff;
+    border: 1px solid #e2ebf5;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+}
+
+.post-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.avatar {
+    background: linear-gradient(135deg, #007bff, #00a6ff);
+    color: white;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.post-info h3 {
+    font-size: 17px;
+    margin-bottom: 3px;
+    color: #333;
+}
+
+.post-info small {
+    color: #888;
+    font-size: 13px;
+}
+
+.post-content {
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.topic-tag {
+    display: inline-block;
+    background: #eaf3ff;
+    color: #007bff;
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+/* ====== REPLIES ====== */
+.reply-list {
+    margin-top: 14px;
+    padding-left: 18px;
+    border-left: 2px solid #cbe4ff;
+}
+
+.reply-card {
+    background: #f3f8ff;
+    border-radius: 10px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.reply-card strong {
+    color: #007bff;
+}
+
+.reply-card small {
+    display: block;
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 4px;
+}
+
+.reply-form {
+    margin-top: 10px;
+    display: flex;
+    gap: 6px;
+}
+
+.reply-form .input.small {
+    flex: 1;
+    padding: 8px 10px;
+    font-size: 13px;
+}
+
+.btn.small {
+    padding: 8px 12px;
+    font-size: 13px;
+    border-radius: 8px;
+}
+
+.reply-toggle {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 5px 0;
+    margin-top: 8px;
+    transition: color 0.2s ease;
+}
+
+.reply-toggle:hover {
+    color: #005fcc;
+    text-decoration: underline;
+}
+
+/* ====== EMPTY STATE ====== */
+.empty {
+    text-align: center;
+    color: #999;
+    font-size: 15px;
+    margin-top: 40px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    margin: 60px 0 30px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
